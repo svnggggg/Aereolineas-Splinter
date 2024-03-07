@@ -1,0 +1,33 @@
+.header {
+  flex: 60%; }
+
+.cabezinha {
+  margin-top: 2%; }
+
+.logo {
+  width: 20%;
+  height: auto; }
+
+.pagination {
+  margin-top: 2%; }
+
+/* 
+
+.img-vuelos{
+    width: 30%;
+    border: 5px solid rgb(57, 135, 236);
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article{
+    flex: 1 200px; /* esto significa que por lo menos tendran 200px de ancho 
+}
+
+*/
+
+/*# sourceMappingURL=styles.css.map */
