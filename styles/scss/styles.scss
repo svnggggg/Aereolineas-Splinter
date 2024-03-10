@@ -1,4 +1,14 @@
-.header{
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.pagination {
+    margin-top: 2%;
+}
+
+.header {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -7,36 +17,37 @@
     padding: 0.75rem;
 }
 
-.header-logo{
+.header-logo {
     width: 20%;
     height: auto;
     border-radius: 10%;
     margin: .5rem;
 }
 
-section{
-    display: inline-flex;
-    flex-direction: column;
+.papa { // Section
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    //border: 5px red solid;
 }
 
-article{
-    display: inline;
-    max-width: 60%;
+.hijo { 
+    max-width: 40%;
     margin: 3% auto;
+    text-align: center;
     height: auto;
-    border: 5px rgb(68, 0, 255) solid;
-    background: orange;
+    color: white;
+    border: 5px #2660A4 solid;
+    background-color: #2055bd;
 }
 
-.img{
-    max-width: 100%;
-    border: 5px red solid;
+.hijo img {
+    max-width: 90%;
     height: auto;
     margin: 5% 5%;
 }
 
-.footer{
+.footer { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,10 +56,19 @@ article{
     padding: 5.75rem;
 }
 
-.cabezinha{
-    margin-top: 2%;
-}
-
-.pagination{
-    margin-top: 2%;
+@media only screen and (max-width: 720px) {
+    .hijo{ 
+        max-width: 100%;
+        margin: 3% auto;
+        text-align: center;
+        height: auto;
+        border: 5px #2660A4 solid;
+    
+        .hijo img{ 
+            max-width: 100%;
+            border: 2px red solid;
+            height: auto;
+            margin: 5% 5%;
+        }
+    }
 }
