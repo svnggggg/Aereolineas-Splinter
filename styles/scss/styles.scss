@@ -35,6 +35,11 @@ nav { // Estilos del nav
     font-size: 24px;
     cursor: pointer;
     display: none; 
+    transition: all 3s;
+}
+
+.nav-links-icon:hover{
+    transform: rotate(360deg);
 }
 
 .nav-links {
@@ -58,19 +63,40 @@ nav { // Estilos del nav
     //border: 5px red solid;
 }
 
-.hijo { 
+.hijo, .hijo2, .hijo3 { 
     max-width: 40%;
     border-radius: 5%;
     margin: 3% auto;
     text-align: center;
     height: auto;
     color: white;
-    border: 5px #2660A4 solid;
-    background-color: #2055bd;
 }
 
-.hijo img {
+.hijo {
+    background-color: #2055bd;
+    border: 5px #2660A4 solid;
+}
+
+
+.hijo2 {
+    background-color: #178b30;
+    border: 5px #26791c solid;
+}
+
+
+.hijo3 {
+    background-color: #245abe;
+    border: 5px #3166e2 solid;
+}
+
+.hijo img, .hijo2 img {
     max-width: 90%;
+    height: auto;
+    margin: 5% 5%;
+}
+
+.hijo3 img{
+    max-width: 70%;
     height: auto;
     margin: 5% 5%;
 }
@@ -89,16 +115,14 @@ nav { // Estilos del nav
 }
 
 @media only screen and (max-width: 720px) { // Mediaquery, ajustes de tamaño en pantallas mas chicas!
-    .hijo{ 
+    .hijo, .hijo2, .hijo3{ 
         max-width: 100%;
         margin: 3% auto;
         text-align: center;
         height: auto;
-        border: 5px #2660A4 solid;
     
-        .hijo img{ 
+        .hijo img, .hijo2 img, .hijo3 img{ 
             max-width: 100%;
-            border: 2px red solid;
             height: auto;
             margin: 5% 5%;
         }
@@ -121,3 +145,4 @@ nav { // Estilos del nav
         display: block;
     }
 }
+
